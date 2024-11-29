@@ -69,7 +69,7 @@ class YouTubeVideoProcessor:
             with open(transcription_file_path, 'r', encoding='utf-8') as f:
                 result = json.load(f)  # Load the existing transcription
         else:
-            print("Transcribing the video ...")
+            print("Transcribing the video (may be time consuming) ...")
             result = self.whisper_model.transcribe(self.video_path)
 
             # Save the transcription result to disk
@@ -198,7 +198,7 @@ class YouTubeVideoProcessor:
             youtube_url=youtube_url,
         )
         
-        with open('output/video_analysis.html', 'w', encoding='utf-8') as f:
+        with open('output/vid2doc.html', 'w', encoding='utf-8') as f:
             f.write(rendered_html)
     
     def cleanup(self):
@@ -217,7 +217,7 @@ def main(youtube_url):
     try:
         sections = processor.extract_text_and_frames()
         processor.generate_html(youtube_url, sections)
-        print("Vid2Doc complete. Check output/video_analysis.html")
+        print("Vid2Doc complete. Check output/vid2doc.html")
     finally:
         # processor.cleanup()
         print("Downloaded video is kept.")
@@ -226,6 +226,6 @@ if __name__ == "__main__":
     # youtube_url = "https://www.youtube.com/watch?v=Mn_9W1nCFLo"
     parser = argparse.ArgumentParser(description="Process a YouTube URL.")
     parser.add_argument("--youtube_url", type=str, help="The URL of the YouTube video")
-    
+
     args = parser.parse_args()
     main(args.youtube_url)

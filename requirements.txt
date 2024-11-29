@@ -3,4 +3,4 @@
 whisper  # must be installed with `pip install git+https://github.com/openai/whisper.git`; see https://github.com/openai/whisper/discussions/251
 opencv-python-headless
 jinja2
-
+numpy
