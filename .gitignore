@@ -1,3 +1,5 @@
 frames/
 output/
 .DS_Store
+downloaded_video.*
+transcription_result.json
