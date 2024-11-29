@@ -62,7 +62,7 @@ The output will be saved in the `output` directory as `vid2doc.html`. This file 
 
 ## Examples:
 
-Pleas reference 
+Pleas reference (Vid2Doc_LLaMA_explained.pdf)[https://github.com/trws2/video2doc/blob/main/Vid2Doc_LLaMA_explained.pdf] for an example.
 
 
 ## License
