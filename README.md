@@ -43,7 +43,7 @@ This code is tested in a MacOS Sequoia (version 15.1) environment with following
 To run the video processor, use the following command:
 
 ```bash
-python main.py --youtube_url "https://www.youtube.com/watch?v=Mn_9W1nCFLo"
+python video_text_frame_extractor.py --youtube_url "https://www.youtube.com/watch?v=Mn_9W1nCFLo"
 ```
 
 Replace the URL with the desired YouTube video link.
