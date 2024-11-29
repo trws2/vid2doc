@@ -1,4 +1,4 @@
-# YouTube Video Processor
+# YouTube Video to Doc (vid2doc) for Quick Video Content Reading
 
 ## Overview
 
@@ -59,6 +59,10 @@ The output will be saved in the `output` directory as `vid2doc.html`. This file 
 - The title of the video.
 - Sections of transcribed text with links to the corresponding time in the video.
 - Extracted frames from the video.
+
+## Examples:
+
+Pleas reference 
 
 
 ## License
